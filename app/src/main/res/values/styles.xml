@@ -1,0 +1,179 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="main_tab_img_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="main_tab_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <!--登录/注册 按钮-->
+    <style name="btn_login_or_register">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_circle_blue</item>
+    </style>
+
+    <!--width = 0dp -->
+    <style name="width_0dp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--购物车数量-->
+    <style name="right_top_count">
+        <item name="android:text">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:background">@drawable/circle_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">right|top</item>
+    </style>
+
+    <!--my view line-->
+    <style name="view_center">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@color/white_view_center</item>
+    </style>
+
+    <!--buy view line  横线view-->
+    <style name="view_buy">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.3px</item>
+        <item name="android:background">@color/gray_line_buy</item>
+    </style>
+
+    <!--login view line 半横线-->
+    <style name="view_third_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.3px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/gray_line_buy</item>
+    </style>
+
+    <!--login view line  竖线view-->
+    <style name="view_login">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@color/gray_line_buy</item>
+    </style>
+
+
+    <!--my tv item-->
+    <style name="tv_item_center">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--buy and my linearlayout item-->
+    <style name="linearlayout_item_center">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--buy tv item-->
+    <style name="tv_item_buy">
+        <item name="android:textColor">@color/gray_tv_buy</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/buy_txt_padding</item>
+    </style>
+
+    <!--buy et item-->
+    <style name="et_item_buy">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">@color/gray_et_buy</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--buy btn publish-->
+    <style name="btn_blue_buy">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/btn_stroke_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--login tv -->
+    <style name="tv_phone_user_login">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray_tv_login</item>
+    </style>
+    <style name="tv_phone_user_hint_login">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray_tv_login</item>
+    </style>
+
+
+    <!--im-->
+    <style name="im_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--  环信RatingBar样式  -->
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/em_ratingbar_drawable</item>
+        <item name="android:minHeight">52dip</item>
+        <item name="android:maxHeight">52dip</item>
+    </style>
+
+</resources>

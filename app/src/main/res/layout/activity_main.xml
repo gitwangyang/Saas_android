@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@mipmap/global_bottom_bg">
+        <LinearLayout
+            android:id="@+id/main_tab_home"
+            style="@style/width_0dp">
+
+            <ImageButton
+                android:id="@+id/main_tab_home_img"
+                style="@style/main_tab_img_style"
+                android:src="@mipmap/tab_home"/>
+            <TextView
+                android:id="@+id/main_tab_home_txt"
+                style="@style/main_tab_txt_style"
+                android:text="@string/home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_tab_buy"
+            style="@style/width_0dp">
+
+            <ImageButton
+                android:id="@+id/main_tab_buy_img"
+                style="@style/main_tab_img_style"
+                android:src="@mipmap/tab_buy_un"/>
+            <TextView
+                android:id="@+id/main_tab_buy_txt"
+                style="@style/main_tab_txt_style"
+                android:text="@string/to_buy"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_tab_classfy"
+            style="@style/width_0dp">
+
+            <ImageButton
+                android:id="@+id/main_tab_classfy_img"
+                style="@style/main_tab_img_style"
+                android:src="@mipmap/tab_classfy_un"/>
+            <TextView
+                android:id="@+id/main_tab_classfy_txt"
+                style="@style/main_tab_txt_style"
+                android:text="@string/classfy"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_tab_cart"
+            style="@style/width_0dp">
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/main_tab_cart_img"
+                    style="@style/main_tab_img_style"
+                    android:src="@mipmap/tab_cart_un"/>
+                <TextView
+                    android:id="@+id/tv_cartCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/circle_bg"
+                    android:textColor="@color/white"
+                    android:layout_gravity="right|top"/>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/main_tab_cart_txt"
+                style="@style/main_tab_txt_style"
+                android:text="@string/purchase_order"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_tab_my"
+            style="@style/width_0dp">
+
+            <ImageButton
+                android:id="@+id/main_tab_my_img"
+                style="@style/main_tab_img_style"
+                android:src="@mipmap/tab_p_center_un"/>
+            <TextView
+                android:id="@+id/main_tab_my_txt"
+                style="@style/main_tab_txt_style"
+                android:text="@string/personal_center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

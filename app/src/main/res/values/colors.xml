@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039be6</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_tab_gray">#999</color>
+
+    <color name="white">#FFF</color>
+    <color name="white_buy">#DDDEDF</color>
+    <color name="black">#ff000000</color>
+    <color name="black_tab_login">#6D6D6D</color>
+    <color name="blue">#539FF9</color>
+    <color name="gray">#DDD</color>
+    <color name="gray_tv_buy">#555</color>
+    <color name="gray_tv_login">#666</color>
+    <color name="gray_et_buy">#aaa</color>
+    <color name="gray_line_center">#F8F6F6</color>
+    <color name="gray_line_buy">#e6e6e6</color>
+    <color name="white_view_center">#E9E8E8</color>
+
+
+    <!--IM-->
+    <color name="em_blue">#99cc00</color>
+    <color name="btn_yellow_light">#EDAD49</color>
+    <color name="btn_yellow_light_pressed">#EDA93F</color>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar" android:id="@+id/buy_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/linearlayout_item_center">
+                <TextView
+                    style="@style/tv_item_buy"
+                    android:text="@string/product" />
+                <EditText
+                    android:id="@+id/et_product_buy"
+                    style="@style/et_item_buy"
+                    android:hint="@string/buy_product_or_model" />
+            </LinearLayout>
+
+            <View style="@style/view_buy" />
+
+            <LinearLayout style="@style/linearlayout_item_center">
+                <TextView
+                    style="@style/tv_item_buy"
+                    android:text="@string/number" />
+                <EditText
+                    android:id="@+id/et_number_buy"
+                    android:inputType="numberDecimal"
+                    style="@style/et_item_buy"
+                    android:hint="@string/buy_need_number" />
+            </LinearLayout>
+
+            <View style="@style/view_buy" />
+
+            <LinearLayout style="@style/linearlayout_item_center">
+                <TextView
+                    style="@style/tv_item_buy"
+                    android:text="@string/size" />
+                <EditText
+                    android:id="@+id/et_size_buy"
+                    style="@style/et_item_buy"
+                    android:hint="@string/buy_choose_write" />
+            </LinearLayout>
+
+            <View style="@style/view_buy" />
+
+            <LinearLayout style="@style/linearlayout_item_center">
+                <TextView
+                    style="@style/tv_item_buy"
+                    android:text="@string/contacts" />
+                <EditText
+                    android:id="@+id/et_contacts_person_buy"
+                    style="@style/et_item_buy"
+                    android:hint="@string/buy_write_name" />
+            </LinearLayout>
+
+            <View style="@style/view_buy" />
+
+            <LinearLayout style="@style/linearlayout_item_center">
+                <TextView
+                    style="@style/tv_item_buy"
+                    android:text="@string/phone_number" />
+                <EditText
+                    android:id="@+id/et_phone_buy"
+                    style="@style/et_item_buy"
+                    android:inputType="phone"
+                    android:hint="@string/buy_phone" />
+            </LinearLayout>
+
+            <View style="@style/view_buy" />
+
+            <LinearLayout style="@style/linearlayout_item_center">
+                <TextView
+                    style="@style/tv_item_buy"
+                    android:text="@string/email" />
+                <EditText
+                    android:id="@+id/et_email_buy"
+                    style="@style/et_item_buy"
+                    android:hint="@string/buy_email"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_more_need_buy"
+                style="?android:attr/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/et_stroke_white"
+                android:gravity="top"
+                android:hint="@string/more_need_buy"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_et_buy"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <GridView
+                    android:id="@+id/gv_camera_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:columnWidth="90dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" />
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_publish_order_buy"
+                    style="@style/btn_blue_buy"
+                    android:text="@string/publish_order" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
