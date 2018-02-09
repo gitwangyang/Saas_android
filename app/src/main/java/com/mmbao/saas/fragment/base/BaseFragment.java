@@ -33,7 +33,6 @@ public abstract class BaseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         mActivity = getActivity();
 
-        ButterKnife.bind(this, view);
         initData();
         initView();
     }
@@ -42,6 +41,8 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(setContentView(layout),container,false);
+
+        ButterKnife.bind(this, view);
         return view;
     }
 
@@ -111,6 +112,17 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ButterKnife.unbind(this);
     }
 
     //----------------------------------Activity跳转------------------------------------------

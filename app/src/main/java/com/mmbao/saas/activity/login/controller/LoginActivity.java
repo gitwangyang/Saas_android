@@ -1,12 +1,10 @@
 package com.mmbao.saas.activity.login.controller;
 
 import android.app.Activity;
-import android.graphics.Bitmap;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,11 +16,7 @@ import com.mmbao.saas.activity.login.adapter.ViewPagerAdapter;
 import com.mmbao.saas.activity.login.bean.LoginBean;
 import com.mmbao.saas.activity.login.model.LoginModel;
 import com.mmbao.saas.activity.login.view.LoginModelImpl;
-import com.mmbao.saas.utils.BitmapLoad;
-import com.mmbao.saas.utils.LogcatUtil;
 import com.mmbao.saas.utils.NetworkUtils;
-import com.mmbao.saas.utils.async.AsyncLoader;
-import com.mmbao.saas.utils.async.OnLoadListener;
 
 import java.util.ArrayList;
 import java.util.List;
